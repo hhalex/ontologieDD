@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.donjondragon.com/ontologies/donjondragon.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.donjondragon.com/ontologies/donjondragon.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Une base de donnée pour Donjon Dragon 3.5</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Barbare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barde"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caracteistique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charisme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DemiElfe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DemiOrc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dexterite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Druide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elfe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ensorceleur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gnome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Halfelin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intelligence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magicien"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paladin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personnage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pretre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rodeur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roublard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sagesse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCaracteristique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompetence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCaracteristique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompetence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Robespierre"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Barbare"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barde"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caracteistique"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charisme"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constitution"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DemiElfe"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DemiOrc"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dexterite"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Druide"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elfe"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ensorceleur"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Force"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gnome"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Halfelin"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humain"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intelligence"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magicien"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moine"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nain"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paladin"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pretre"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Race"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rodeur"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roublard"/>
+        <Class IRI="#Classe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sagesse"/>
+        <Class IRI="#Caracteistique"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Race"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Charisme"/>
+        <Class IRI="#Constitution"/>
+        <Class IRI="#Dexterite"/>
+        <Class IRI="#Force"/>
+        <Class IRI="#Intelligence"/>
+        <Class IRI="#Sagesse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DemiElfe"/>
+        <Class IRI="#DemiOrc"/>
+        <Class IRI="#Elfe"/>
+        <Class IRI="#Gnome"/>
+        <Class IRI="#Halfelin"/>
+        <Class IRI="#Humain"/>
+        <Class IRI="#Nain"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Humain"/>
+        <NamedIndividual IRI="#Robespierre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rodeur"/>
+        <NamedIndividual IRI="#Robespierre"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCaracteristique"/>
+        <ObjectProperty IRI="#isCaracteristique"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isClass"/>
+        <ObjectProperty IRI="#hasClass"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCompetence"/>
+        <ObjectProperty IRI="#isCompetence"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRace"/>
+        <ObjectProperty IRI="#hasRace"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRace"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCaracteristique"/>
+        <Class IRI="#Personnage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompetence"/>
+        <Class IRI="#Personnage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCaracteristique"/>
+        <Class IRI="#Caracteistique"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
