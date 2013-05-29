@@ -32,13 +32,163 @@
         <Class IRI="#Barde"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Charisme"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Classe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceAcrobaties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceArt_de_la_magie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceArtisanat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceBluff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceConnaissances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceContrefaçon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceCrochetage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDiplomatie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDiscrétion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDressage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDécryptage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDéguisement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDéplacement_silencieux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDésamorçage/Sabotage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceDétection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEquilibre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEquitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEscalade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEscamotage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEstimation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceEvasion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceFouille"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceInnee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceIntimidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceLangue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceMaîtrise_des_cordes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceNatation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceNonInnee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetencePerception_auditive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetencePremiers_secours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceProfession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetencePsychologie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceRenseignements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceReprésentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceSaut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceSurvie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetenceUtilisation_d&apos;objets_magiques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesArchitecture_et_Ingénierie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesExploration_souterraine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesFolklore_local"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesGéographie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesHistoire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesMystères"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesNature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesNoblesse_et_Royauté"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesPlans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnaissancesReligion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Constitution"/>
@@ -110,6 +260,9 @@
         <ObjectProperty IRI="#hasCaracteristique"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasClass"/>
     </Declaration>
     <Declaration>
@@ -142,16 +295,247 @@
         <Class IRI="#Classe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Charisme"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceAcrobaties"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceArt_de_la_magie"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceArtisanat"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceBluff"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceConcentration"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceConnaissances"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceContrefaçon"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceCrochetage"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceCrochetage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+            <Class IRI="#Dexterite"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDiplomatie"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDiscrétion"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDressage"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDressage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+            <Class IRI="#Charisme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDécryptage"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDécryptage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+            <Class IRI="#Intelligence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDéguisement"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDéplacement_silencieux"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDésamorçage/Sabotage"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceDétection"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEquilibre"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEquitation"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEscalade"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEscamotage"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEstimation"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceEvasion"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceForce"/>
+        <Class IRI="#Competence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceForce"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+            <Class IRI="#Force"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceFouille"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceInnee"/>
+        <Class IRI="#Competence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceIntimidation"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceLangue"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceMaîtrise_des_cordes"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceNatation"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceNonInnee"/>
+        <Class IRI="#Competence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetencePerception_auditive"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetencePremiers_secours"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceProfession"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetencePsychologie"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceRenseignements"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceReprésentation"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceSaut"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceSaut"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCaracteristiqueMajeure"/>
+            <Class IRI="#Force"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceSurvie"/>
+        <Class IRI="#CompetenceInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetenceUtilisation_d&apos;objets_magiques"/>
+        <Class IRI="#CompetenceNonInnee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesArchitecture_et_Ingénierie"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesExploration_souterraine"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesFolklore_local"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesGéographie"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesHistoire"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesMystères"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesNature"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesNoblesse_et_Royauté"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesPlans"/>
+        <Class IRI="#CompetenceConnaissances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnaissancesReligion"/>
+        <Class IRI="#CompetenceConnaissances"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Constitution"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DemiElfe"/>
@@ -163,7 +547,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dexterite"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Druide"/>
@@ -179,7 +563,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Force"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gnome"/>
@@ -195,7 +579,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Intelligence"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Magicien"/>
@@ -231,10 +615,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sagesse"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
         <Class IRI="#Race"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -244,6 +628,58 @@
         <Class IRI="#Force"/>
         <Class IRI="#Intelligence"/>
         <Class IRI="#Sagesse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CompetenceAcrobaties"/>
+        <Class IRI="#CompetenceArt_de_la_magie"/>
+        <Class IRI="#CompetenceConnaissances"/>
+        <Class IRI="#CompetenceCrochetage"/>
+        <Class IRI="#CompetenceDressage"/>
+        <Class IRI="#CompetenceDécryptage"/>
+        <Class IRI="#CompetenceDésamorçage/Sabotage"/>
+        <Class IRI="#CompetenceEscamotage"/>
+        <Class IRI="#CompetenceLangue"/>
+        <Class IRI="#CompetenceProfession"/>
+        <Class IRI="#CompetenceUtilisation_d&apos;objets_magiques"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CompetenceArtisanat"/>
+        <Class IRI="#CompetenceBluff"/>
+        <Class IRI="#CompetenceConcentration"/>
+        <Class IRI="#CompetenceContrefaçon"/>
+        <Class IRI="#CompetenceDiplomatie"/>
+        <Class IRI="#CompetenceDiscrétion"/>
+        <Class IRI="#CompetenceDéguisement"/>
+        <Class IRI="#CompetenceDéplacement_silencieux"/>
+        <Class IRI="#CompetenceDétection"/>
+        <Class IRI="#CompetenceEquilibre"/>
+        <Class IRI="#CompetenceEquitation"/>
+        <Class IRI="#CompetenceEscalade"/>
+        <Class IRI="#CompetenceEstimation"/>
+        <Class IRI="#CompetenceEvasion"/>
+        <Class IRI="#CompetenceFouille"/>
+        <Class IRI="#CompetenceIntimidation"/>
+        <Class IRI="#CompetenceMaîtrise_des_cordes"/>
+        <Class IRI="#CompetenceNatation"/>
+        <Class IRI="#CompetencePerception_auditive"/>
+        <Class IRI="#CompetencePremiers_secours"/>
+        <Class IRI="#CompetencePsychologie"/>
+        <Class IRI="#CompetenceRenseignements"/>
+        <Class IRI="#CompetenceReprésentation"/>
+        <Class IRI="#CompetenceSaut"/>
+        <Class IRI="#CompetenceSurvie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConnaissancesArchitecture_et_Ingénierie"/>
+        <Class IRI="#ConnaissancesExploration_souterraine"/>
+        <Class IRI="#ConnaissancesFolklore_local"/>
+        <Class IRI="#ConnaissancesGéographie"/>
+        <Class IRI="#ConnaissancesHistoire"/>
+        <Class IRI="#ConnaissancesMystères"/>
+        <Class IRI="#ConnaissancesNature"/>
+        <Class IRI="#ConnaissancesNoblesse_et_Royauté"/>
+        <Class IRI="#ConnaissancesPlans"/>
+        <Class IRI="#ConnaissancesReligion"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#DemiElfe"/>
@@ -291,7 +727,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCaracteristique"/>
-        <Class IRI="#Caracteistique"/>
+        <Class IRI="#Caracteristique"/>
     </ObjectPropertyRange>
 </Ontology>
 
